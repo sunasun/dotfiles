@@ -113,3 +113,6 @@ alias la="ls -la"
 # grepの設定 n:行番号の表示
 alias grep="grep -n --color=auto"
 
+# 文字コードの指定
+export LANG='ja_JP.UTF-8'
+export LESSCHARSET=utf-8
