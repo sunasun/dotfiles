@@ -1,6 +1,8 @@
+# phpstorm
 .idea
-
-# for xdebug
-docker-compose.override.yml
+# xdebug
 .php-version
+docker-compose.override.yml
 etc/php5/conf.d/xdebug.ini
+# mac
+.DS_Store
