@@ -1,1 +1,6 @@
 .idea
+
+# for xdebug
+docker-compose.override.yml
+.php-version
+etc/php5/conf.d/xdebug.ini
