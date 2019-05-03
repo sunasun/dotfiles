@@ -108,8 +108,29 @@ alias l="ls -l"
 alias ll="ls -l"
 alias la="ls -la"
 
+# custom command
+function stgf() {
+  git checkout master
+  git branch -D staging
+  git fetch origin
+  git checkout staging
+}
+
+function rm-merged-branch() {
+  git branch --merged master | grep -vE '^\*|master$' | xargs -I % git branch -d %
+}
+
+function make-react-dir(){
+  mkdir actions
+  mkdir components
+  mkdir reducers
+  mkdir constants
+  mkdir types
+  mkdir utils
+}
+
 # grepの設定 n:行番号の表示
-alias grep="grep -n --color=auto"
+alias grep="grep --color=auto"
 
 # 文字コードの指定
 export LANG='ja_JP.UTF-8'
