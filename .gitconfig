@@ -7,8 +7,11 @@
 [commit]
 	template = ~/.stCommitMsg
 [alias]
+alias = config --get-regexp alias
+me = config --get-regexp user
 plog = log --pretty='format:%C(yellow)%h %C(green)%cd %C(reset)%s %C(red)%d %C(cyan)[%an]' --date=iso
-glog = log --graph --date=short --decorate=short --pretty=format:'%Cgreen%h %Creset%cd %Cblue%cn %Cred%d %Creset%s'
+plogs = log --stat --pretty='format:%C(yellow)%h %C(green)%cd %C(reset)%s %C(red)%d %C(cyan)[%an]' --date=iso
+plogg = log --graph --pretty='format:%C(yellow)%h %C(green)%cd %C(reset)%s %C(red)%d %C(cyan)[%an]' --date=iso
 br = branch
 co = checkout
 ci = commit
