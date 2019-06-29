@@ -129,6 +129,10 @@ function make-react-dir(){
   mkdir utils
 }
 
+function chbr () {
+  git checkout `git branch | peco`
+}
+
 # grepの設定 n:行番号の表示
 alias grep="grep --color=auto"
 
