@@ -1,0 +1,15 @@
+[core]
+	excludesfile = ~/.gitignore_global
+[user]
+	name = sunasun
+	email = sunasun526@gmail.com
+[commit]
+	template = ~/.stCommitMsg
+[alias]
+plog = log --pretty='format:%C(yellow)%h %C(green)%cd %C(reset)%s %C(red)%d %C(cyan)[%an]' --date=iso 
+br = branch
+co = checkout
+ci = commit
+st = status
+pl = pull
+ps = push
