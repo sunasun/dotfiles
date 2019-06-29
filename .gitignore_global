@@ -1,5 +1,7 @@
 # phpstorm
 .idea
+# vs code
+.history
 # xdebug
 .php-version
 docker-compose.override.yml
