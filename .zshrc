@@ -95,8 +95,8 @@ source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 # EnvSettings
 # ==============================
 
-export PATH="$HOME/.anyenv/bin:$PATH"
-eval "$(anyenv init -)"
+export PATH="$HOME/.nodenv/bin:$PATH"
+eval "$(nodenv init -)"
 
 # alias
 # rm,cp,mvするときは確認
